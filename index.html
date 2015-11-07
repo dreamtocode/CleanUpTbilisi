@@ -47,6 +47,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -57,11 +58,20 @@
       ga('send', 'pageview');
 
     </script>
-
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script>
+    //paste this code under head tag or in a seperate js file.
+        // Wait for window load
+        $(window).load(function() {
+            // Animate loader off screen
+            $(".se-pre-con").fadeOut("slow");;
+        });
+    </script>
 </head>
 
 <body>
-
+<div class="se-pre-con"></div>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
         <div class="container topnav">
@@ -79,7 +89,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#main">მთავარი</a>
+                        <a href="#intro">მთავარი</a>
                     </li>
                     <li>
                         <a href="#map">რუკა</a>
@@ -96,28 +106,18 @@
 
 
     <!-- Header -->
-    <a name="main"></a>
+    <a name="intro"></a>
     <div class="intro-header">
         <div class="container">
 
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>Landing Page</h1>
-                        <h3>A Template by Start Bootstrap</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col-sm-4">დასუფთავება დასუფთავება
+                დასუფთავება დასუფთავება დასუფთავება დასუფთავება დასუფთავება</div>
+                <div class="col-sm-8">
+                   <iframe width="600" height="338" src="http://www.youtube.com/embed/KgMt0dtr4Vc" frameborder="0" allowfullscreen></iframe>
+                </div>
+             </div>
+             <h2 class="intro-heading"> გთხოვთ გააზიარეთ!</h2>
                 </div>
             </div>
 
@@ -231,7 +231,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="list-inline">
-                            <a href="#main">მთავარი</a>
+                            <a href="#intro">მთავარი</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
@@ -242,7 +242,7 @@
                             <a href="#contact">კონტაქტი</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+                    <p class="copyright text-muted small">Copyright &copy; Clean Up Tbilisi 2015. All Rights Reserved</p>
                 </div>
             </div>
         </div>

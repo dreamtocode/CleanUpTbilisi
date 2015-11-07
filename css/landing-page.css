@@ -3,7 +3,6 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
 body,
 html {
     width: 100%;
@@ -20,7 +19,22 @@ h6 {
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
+html,
+body, footer {
+    background: url("../pattern.png");
+}
 
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../preloader.gif) center no-repeat #fff;
+}
 .topnav {
     font-size: 14px; 
 }
@@ -29,14 +43,18 @@ h6 {
     font-size: 18px;
     font-weight: 400;
 }
+.main-heading {
+    margin-left: 10px;
+    text-align: center;
+}
+
+.embed-responsive-16by9 {
+  padding-bottom: 56.25%;
+}
 
 .intro-header {
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
-    text-align: center;
-    color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
-    background-size: cover;
 }
 
 .intro-message {
@@ -168,3 +186,11 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+::selection {
+  background: #ffb7b7;
+}
+::-moz-selection {
+  background: #ffb7b7;
+}
+
