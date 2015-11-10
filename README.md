@@ -1,4 +1,6 @@
+## Update about project
 
+We got third place at GDG DevFest Tbilisi Hackathon. 
 
 ## Information
 
