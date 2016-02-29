@@ -1,6 +1,6 @@
 ## Update about project
 
-We got third place at GDG DevFest Tbilisi Hackathon. 
+We got third place at GDG DevFest Tbilisi Hackathon. For this project I wrote my first georgian palindrome.
 
 ## Information
 
